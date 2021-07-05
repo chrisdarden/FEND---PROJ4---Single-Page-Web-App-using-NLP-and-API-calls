@@ -3,6 +3,7 @@ import "./css/base.css"
 import "./css/footer.css"
 import "./css/form.css"
 import "./css/header.css"
+alert("hey!!");
 
 function handleSubmit(event) {
     event.preventDefault()
