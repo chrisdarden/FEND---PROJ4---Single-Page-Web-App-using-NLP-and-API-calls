@@ -1,4 +1,4 @@
-import { checkForName } from './js/nameChecker'
+import { checkURL } from './js/formHandler'
 
 import "./css/resets.css"
 import "./css/base.css"
@@ -17,8 +17,8 @@ pressMe.addEventListener('click', (e) => {
     const data = { // store url as data for fetch
         formText
     }
-    if (checkForName(formText)) { //runs function for valid input
-        fetch('/userText', {
+    if (checkURL(formText)) { //runs function for valid input
+        fetch('/NLP', {
                 method: 'POST',
                 credentials: 'same-origin',
                 headers: {
