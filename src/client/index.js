@@ -18,7 +18,7 @@ pressMe.addEventListener('click', (e) => {
         formText
     }
     if (checkForName(formText)) { //runs function for valid input
-        fetch('http://localhost:8080/userText', {
+        fetch('/userText', {
                 method: 'POST',
                 credentials: 'same-origin',
                 headers: {

@@ -4,7 +4,7 @@ function handleSubmit(event) {
     let userURL = document.getElementById('userURL').value
 
     console.log("::: Form Submitted :::")
-    fetch('http://localhost:8080/test')
+    fetch('http://localhost:8080/userText')
         .then(res => res.json())
         .then(function(res) {
             document.getElementById('results').innerHTML = res.message

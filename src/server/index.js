@@ -8,8 +8,9 @@ const fetch = require("node-fetch");
 // API Key
 const dotenv = require('dotenv');
 dotenv.config();
+
 const api_key = process.env.API_KEY;
-console.log("API key =", APIKey);
+console.log("API key = " + api_key);
 
 // Create Express App
 const app = express();
@@ -28,10 +29,10 @@ app.listen(8080, function() {
 })
 
 // ON Load of page, send Main view
-app.get('/', function(req, res) {
-    res.sendFile('dist/index.html')
-        //res.sendFile(path.resolve('src/client/views/index.html'))
-})
+// app.get('/', function(req, res) {
+//     res.sendFile('dist/index.html')
+//         //res.sendFile(path.resolve('src/client/views/index.html'))
+// })
 
 app.post('/userText', async(req, res) => {
     console.log('req.body ===+>', req.body)
