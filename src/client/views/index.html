@@ -22,14 +22,22 @@
         <section>
             <form class="" onsubmit="return handleSubmit(event)">
                 <input id="userURL" type="text" name="input" value="" placeholder="Website to analyze">
-                <input type="submit" name="" value="submit" onclick="return handleSubmit(event)" onsubmit="return handleSubmit(event)">
+                <button id="generate" type="submit"> Generate </button>
+                <!--<input type="submit" name="" value="submit" onclick="return handleSubmit(event)"> -->
             </form>
         </section>
 
+
         <section>
-            <strong>Form Results:</strong>
-            <div id="results"></div>
+            <strong><div id="results">Analysis results:</div></strong>
+            <div id="model"></div>
+            <div id="score_tag"></div>
+            <div id="agreement"></div>
+            <div id="subjectivity"></div>
+            <div id="confidence"></div>
+            <div id="irony"></div>
         </section>
+
     </main>
 
     <footer>
