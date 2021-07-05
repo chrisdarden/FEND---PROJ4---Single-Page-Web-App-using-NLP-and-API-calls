@@ -28,12 +28,6 @@ app.listen(8080, function() {
     console.log('Example app listening on port 8080!')
 })
 
-// ON Load of page, send Main view
-// app.get('/', function(req, res) {
-//     res.sendFile('dist/index.html')
-//         //res.sendFile(path.resolve('src/client/views/index.html'))
-// })
-
 app.post('/userText', async(req, res) => {
     console.log('req.body ===+>', req.body)
     const response = await fetch(`https://api.meaningcloud.com/sentiment-2.1?key=${api_key}&url=${req.body.formText}&lang=en`);
