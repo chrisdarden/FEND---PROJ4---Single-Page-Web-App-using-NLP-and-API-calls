@@ -36,6 +36,8 @@ app.post('/NLP', async(req, res) => {
         console.log(data);
         res.send(data);
     } catch (error) {
+        alert(error);
         console.log("error", error);
+
     }
 });
