@@ -17,7 +17,7 @@ pressMe.addEventListener('click', (e) => {
     const data = { // store url as data for fetch
         formText
     }
-    if (Client.checkURL(formText)) { //runs function for valid input
+    if (checkURL(formText)) { //runs function for valid input
         fetch('/NLP', {
                 method: 'POST',
                 credentials: 'same-origin',
