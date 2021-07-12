@@ -28,7 +28,7 @@ app.listen(8080, function() {
     console.log('Example app listening on port 8080!')
 })
 
-app.post('http://localhost:8080/NLP', async(req, res) => {
+app.post('/NLP', async(req, res) => {
     console.log('req.body ===+>', req.body)
     const response = await fetch(`https://api.meaningcloud.com/sentiment-2.1?key=${api_key}&url=${req.body.formText}&lang=en`);
     try {
