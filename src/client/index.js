@@ -18,7 +18,7 @@ pressMe.addEventListener('click', (e) => {
         formText
     }
     if (checkURL(formText)) { //runs function for valid input
-        fetch('/NLP', {
+        fetch('http://localhost:8080/NLP', {
                 method: 'POST',
                 credentials: 'same-origin',
                 headers: {
